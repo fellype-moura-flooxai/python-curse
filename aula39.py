@@ -3,12 +3,14 @@ while True:
     primeiro = input('digite um numero: ')
     operador = input('digite o operador: ')
     segundo = input('digite o outro numero: ')
-
+    primeiro_float = 0
+    segundo_float = 0
     numerosvalidos = None
 
+
     try: 
-        num_float = float(primeiro)
-        num2_float = float(segundo)
+        primeiro_float = float(primeiro)
+        segundo_float = float(segundo)
         numerosvalidos = True
     except:
         numerosvalidos = None
@@ -27,7 +29,16 @@ while True:
         print('operador invalido')
         continue
 
-    
+    if operador == '+':
+        print (f'O resultado de {primeiro} + {segundo} é: {primeiro_float + segundo_float}')
+    elif operador == '-':
+        print (f'O resultado de {primeiro} - {segundo} é: {primeiro_float - segundo_float}')
+    elif operador == '*':
+        print (f'O resultado de {primeiro} * {segundo} é: {primeiro_float * segundo_float}')
+    elif operador == '/':
+        print (f'O resultado de {primeiro} / {segundo} é: {primeiro_float / segundo_float}')
+    else :
+        print('n era pra chegar aqui')
 
     sair = input('Deseja sair? sim: ').lower()
 
