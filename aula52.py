@@ -6,7 +6,7 @@ Não permita que o programa quebre com
 erros de índices inexistentes na lista.
 """
 
-# meu código
+''' meu código'''
 
 lista = ['maça', 'limão', 'pera', 'banana', 'uva']
 
@@ -52,7 +52,7 @@ while True:
         break
 
 
-# do professor 
+''' do professor '''
 
 
 # import os
